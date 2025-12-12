@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('reserva', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->number('date');
-            $table->number('hour');
-            $table->number('minutes');
+            $table->integer('date');
+            $table->integer('hour');
+            $table->integer('minutes');
 
         });
     }

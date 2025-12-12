@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->text('edificio');
-            $table->number('piso');
-            $table->number('codEntrada');
+            $table->integer('piso');
+            $table->integer('codEntrada');
 
         });
     }
