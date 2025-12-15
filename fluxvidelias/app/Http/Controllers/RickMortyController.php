@@ -12,16 +12,21 @@ class RickMortyController extends Controller
     {
         $response = Http::get('http://rickandmortyapi.com/api/character');
         $characters = collect($response->json('results'))
-                        ->map(fn($item)=>(object) $item);
+            ->map(fn($item) => (object) $item);
 
 
-        do {
-            # code...
-        } while ($characters <= 10);
+        /*do {
+            $response= Http::get($)
+        } while ();*/
+        return view('rickmorty.index', compact('characters'));
+    }
 
 
-
-
-        return view('rickmorty.index',compact('characters'));
+    public function getCharacterById(string $id)
+    {
+        $response = Http::get('http://rickandmortyapi.com/api/character/'. $id);
+        $character = $response->json();
+       
+        return view('rickmorty.character', compact('character'));
     }
 }

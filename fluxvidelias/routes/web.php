@@ -15,7 +15,8 @@ Route::get('/', IndexController::class)->name('inicio');
 
 
 //Ruta normal
-Route::get('getCharacter', [RickMortyController::class,'getCharacter'])->name('getCharacter');
+Route::get('rickmorty', [RickMortyController::class,'getCharacter'])->name('rickmorty.index');
+Route::get('rickmorty/{character}', [RickMortyController::class,'getCharacterById'])->name('rickmorty.character');
 
 
 //Ruta de tipo recurso
