@@ -15,7 +15,7 @@ class RickMortyController extends Controller
             ->map(fn($item) => (object) $item);
 
 
-        return view('rickmorty.index');
+        return view('rickmorty.index', compact('characters'));
     }
 
     public function getCharacterById(string $id)

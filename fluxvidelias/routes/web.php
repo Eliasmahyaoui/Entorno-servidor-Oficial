@@ -15,25 +15,23 @@ Route::get('/', IndexController::class)->name('inicio');
 
 
 //Ruta normal
-Route::get('rickmorty', [RickMortyController::class,'getCharacter'])->name('rickmorty.index');
-Route::get('rickmorty/{character}', [RickMortyController::class,'getCharacterById'])->name('rickmorty.character');
+Route::get('rickmorty', [RickMortyController::class, 'getCharacter'])->name('rickmorty.index');
+Route::get('rickmorty/{character}', [RickMortyController::class, 'getCharacterById'])->name('rickmorty.character');
 
 
 //Ruta de tipo recurso
-Route::resource('actors',ActorController::class);
+Route::resource('actors', ActorController::class);
 
 //Ruta de varias acciones
-Route::get('faq', [LegalsController::class,'faq'])->name('faq');
-Route::get('cookies', [LegalsController::class,'cookies'])->name('cookies');
+Route::get('faq', [LegalsController::class, 'faq'])->name('faq');
+Route::get('cookies', [LegalsController::class, 'cookies'])->name('cookies');
 
 
 
 //Ruta de tipo recurso
-Route::resource('movies',MovieController::class);
+Route::resource('movies', MovieController::class);
 
 Route::resource('studios', StudioController::class);
 //Route::get('animes/addslug', [AnimeController::class, 'addSlug']);
 Route::resource('animes', AnimeController::class);
 Route::resource('characters', CharacterController::class);
-
-
