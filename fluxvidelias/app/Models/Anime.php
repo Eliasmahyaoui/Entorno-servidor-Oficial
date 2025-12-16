@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Anime extends Model
 {
 
+    protected $hidden= ['created_at', 'updated_at'];
 
     public function getRouteKeyName()
     {
