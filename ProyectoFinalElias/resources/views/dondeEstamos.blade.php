@@ -8,5 +8,5 @@ Donde estamos
 @section('content')
 
 <h1>Donde estamos</h1>
-
+    <img src="imagenes/dondeEstamos.jpeg" alt="Donde estamos ">
 @endsection

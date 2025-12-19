@@ -5,5 +5,7 @@
 @endsection
 
 @section('content')
-    <p>Aqui ira la informacion del jugador: 33</p>
+    <p>aqui va a ir la informacion del jugador </p>
+
 @endsection
+

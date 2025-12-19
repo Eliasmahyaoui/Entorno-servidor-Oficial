@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use illuminate\View\view;
 
+use function Laravel\Prompts\form;
+
 class PlayersController extends Controller
 {
 
