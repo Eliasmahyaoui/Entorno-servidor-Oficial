@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AnimeController;
+use App\Http\Controllers\CharacterController;
 use App\Http\Controllers\StudioController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,9 +18,8 @@ Route::get('inicio', function () {
 
 
 
-
-//rutas de varios recursos suelen ser para lo que tengan que ver con tablas CRUD en este caso SI
-
+//Rutas de varios recursos
 Route::resource('studio', StudioController::class);
-
+Route::resource('anime',AnimeController::class);
+Route::resource('character', CharacterController::class);
 
