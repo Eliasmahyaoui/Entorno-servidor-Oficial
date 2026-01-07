@@ -10,10 +10,10 @@
 
 <body>
     <nav>
-        <a href="">Principal</a>
-        <a href="subjects.index">Ver asignaturas</a>
-        <a href="subjects.show">Ver asignaturas 123</a>
-        <a href="subjects.create">Añadir asignatura</a>
+        <a href="/">Principal</a>
+        <a href="{{route('subjects.index')}}">Ver asignaturas</a>
+        <a href="{{route('subjects.show',123)}}">Ver asignaturas 123</a>
+        <a href="{{route('subjects.create')}}">Añadir asignatura</a>
     </nav>
 
     @yield('content')

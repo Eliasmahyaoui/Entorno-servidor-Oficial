@@ -33,7 +33,7 @@ class SubjectsController extends Controller
 
     public function show(string $id):View
     {
-        return view('subjects.show', compact($id));
+        return view('subjects.show', compact('id'));
     }
 
 
