@@ -3,6 +3,7 @@
 use App\Http\Controllers\AnimeController;
 use App\Http\Controllers\CharacterController;
 use App\Http\Controllers\LegalsController;
+use App\Http\Controllers\MovieController;
 use App\Http\Controllers\StudioController;
 use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
@@ -22,3 +23,5 @@ Route::get('cookies', [LegalsController::class, 'cookies'])->name('cookies');
 Route::resource('studio', StudioController::class);
 Route::resource('anime', AnimeController::class);
 Route::resource('character', CharacterController::class);
+
+Route::resource('movie', MovieController::class);
